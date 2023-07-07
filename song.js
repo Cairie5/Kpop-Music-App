@@ -31,6 +31,11 @@ document.addEventListener("DOMContentLoaded", function() {
         file: "Music/ENHYPEN.mp3",
         title: "Fever",
         duration: "4:10",
+      },
+      {
+        file: "Music/Monsta-x.mp3",
+        title: "Who Do U Love",
+        duration: "3:19",
       }
     ];
   
