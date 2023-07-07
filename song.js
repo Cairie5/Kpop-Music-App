@@ -59,15 +59,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }); 
   
-
-  document.getElementById("logoutButton").addEventListener("click", function(event) {
-    event.preventDefault(); // Prevent default link behavior
-    
-    // Perform logout actions, such as clearing user session or tokens
-    // For example:
-    // localStorage.removeItem("userToken"); // Remove stored user token
-
-    // Redirect the user to the login page
-    window.location.href = "login.html";
-  });
-
