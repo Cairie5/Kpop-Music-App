@@ -1,5 +1,5 @@
 *{
-  background: blueviolet;
+  background: #000;
 }
 
 .logo img{
@@ -40,6 +40,11 @@ header {
   color: #000;
 }
 
+#current-song {
+  color: purple;
+  font-size: 50px;
+}
+
 #music-player {
     width: 300px;
     margin: 50px auto;
@@ -48,6 +53,8 @@ header {
 #playlist {
     list-style: none;
     padding: 0;
+    color: aqua;
+    font-size: 20px;
   }
   
 #playlist li {

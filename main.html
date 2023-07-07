@@ -8,26 +8,53 @@
 	<header>
 		<div id="logo"><img src="pictures/optimized_large_thumb_stage-removebg-preview.png" alt="kpop"></span></div>
 		<span class="sign"><a class="act" href="#" id="openModalBtn">LOGIN</a></span>
-		<span class="sign"><a href="#">REGISTER</a></span>
+		<span class="sign"><a href="#" id="openRegModalBtn">REGISTER</a></span>
 	</header>
-
+<!-- login form -->
 	<div class="modal" id="myModal">
 		<div class="modal-content">
 			<span class="close"><ion-icon name="close-outline"></ion-icon></span>
 			<h2>Login</h2>
 			<p>Enter your details</p>
 			<form class="login-form">
-			<div>
-			    <label for="email"><span class="email"><ion-icon name="mail-outline"></ion-icon></span></label>
-			    <input type="email">
+			<div class="div">
+			    <label for="email"><span class="email" ><ion-icon name="mail-outline"></ion-icon></span></label>
+			    <input type="email" placeholder="Enter your email ...">
 			</div>
-			<div>
-			    <label for="password"><span class="password"><ion-icon name="lock-closed-outline"></ion-icon></span></label>
-			    <input type="password">
+			<div class="div">
+			    <label for="password"><span class="password" ><ion-icon name="lock-closed-outline"></ion-icon></span></label>
+			    <input type="password" placeholder="Enter your password ... ">
 			</div>
 			<div class="form-footer">
 			    <label><input type="checkbox">Remember me</label>
 			    <a>Forgot Your Password?</a>
+			</div>
+
+			<button id="login-btn" class="login-btn">Login</button>
+
+			</form>
+		</div>
+	</div>
+<!-- reg form -->
+
+	<div class="reg modal" id="myRegModal">
+		<div class="reg modal-content">
+		<div><span class="regClose"><ion-icon name="close-outline"></ion-icon></span>
+		</div>
+			<h2>Register</h2>
+			<p>Enter your details</p>
+			<form class="reg login-form">
+			<div class="div">
+			    <label for="email"><span class="email" ><ion-icon name="mail-outline"></ion-icon></span></label>
+			    <input type="email" placeholder="Enter your email ...">
+			</div>
+			<div class="div">
+			    <label for="password"><span class="password" ><ion-icon name="lock-closed-outline"></ion-icon></span></label>
+			    <input type="password" placeholder="Enter your password ... ">
+			</div>
+			<div class="form-footer">
+			    <label><input type="checkbox">Remember me</label>
+			    <a href="#">Forgot Your Password?</a>
 			</div>
 
 			<button id="login-btn" class="login-btn">Login</button>

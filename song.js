@@ -26,6 +26,11 @@ document.addEventListener("DOMContentLoaded", function() {
         file: "Music/TXT.mp3",
         title: "Sugar Rush Ride",
         duration: "3:33",
+      },
+      {
+        file: "Music/ENHYPEN.mp3",
+        title: "Fever",
+        duration: "4:10",
       }
     ];
   

@@ -41,7 +41,7 @@ function slidefun(n) {
 	myslide[counter - 1].style.display = "block";
 	dot[counter - 1].className += " active";
 }
-
+// login form 
 let modal = document.getElementById ('myModal');
 let btn = document.getElementById ('openModalBtn');
 let span = document.getElementsByClassName ('close')[0];
@@ -57,7 +57,21 @@ window.onclick = function (event){
 	}
 }
 
-let loginBtn = document.getElementById ('login-btn');
-loginBtn.onclick = function () {
-	window.location.href = "/song.html";
+// reg form
+let regModal = document.getElementById ('myRegModal');
+let regBtn = document.getElementById ('openRegModalBtn');
+let regSpan = document.getElementsByClassName ('regClose')[0];
+regBtn.onclick = function (){
+	regModal.style.display = "block";
 }
+regSpan.onclick = function () {
+	regModal.style.display = "none";
+}
+window.onclick = function (event){
+	if (event.target == regModal){
+		regModal.style.display = "none";
+	}
+}
+
+let loginBtn = document.getElementById ('login-btn');
+
