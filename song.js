@@ -11,31 +11,37 @@ document.addEventListener("DOMContentLoaded", function() {
         file: "Music/B.I.mp3",
         title: "Btbt",
         duration: "3:43",
+        artist: "B.I.",
       },
       {
         file: "Music/BTS.mp3",
         title: "Fire",
         duration: "4:54",
+        artist: "BTS",
       },
       {
         file: "Music/Blackswan.mp3",
         title: "Karma",
         duration: "3:41",
+        artist: "Blackswan",
       },
       {
         file: "Music/TXT.mp3",
         title: "Sugar Rush Ride",
         duration: "3:33",
+        artist: "TXT",
       },
       {
         file: "Music/ENHYPEN.mp3",
         title: "Fever",
         duration: "4:10",
+        artist: "ENHYPEN",
       },
       {
         file: "Music/Monsta-x.mp3",
         title: "Who Do U Love",
         duration: "3:19",
+        artist: "Monsta-x"
       }
     ];
   
