@@ -1,0 +1,92 @@
+<!-- <!DOCTYPE html>
+<html lang="eng">
+<head>
+  <title>KPOP-MUSIC</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body style="height: 2000px;">
+  <header>
+    <div id="logo">
+      <img src="pictures/optimized_large_thumb_stage-removebg-preview.png" alt="kpop">
+    </div>
+    <span class="sign"><a class="act" href="#">LOGIN</a></span>
+    <span class="sign"><a href="#">REGISTER</a></span>
+  </header>
+
+  <div class="slider"> -->
+    <!-- Slider content -->
+  <!-- </div>
+
+  <div class="wrapper">
+    <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+          <input type="email" id="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+          <input type="password" id="password" required>
+          <label>Password</label>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="login-registration">
+          <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+        </div>
+      </form>
+    </div>
+    <div class="form-box register">
+      <h2>Register</h2> -->
+      <!-- Registration form content -->
+    <!-- </div>
+  </div>
+
+  <script src="index.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+    const loginForm = document.getElementById('loginForm');
+
+    loginForm.addEventListener('submit', (event) => {
+      event.preventDefault(); // Prevent form submission
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      if (!email || !password) {
+        alert('Please enter both email and password.');
+        return;
+      }
+
+      const formData = {
+        email: email,
+        password: password
+      };
+
+      fetch('/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data.success) {
+            alert('Login successful!');
+            // Perform any additional actions, such as redirecting the user to a new page
+          } else {
+            alert('Login failed. Please check your credentials.');
+          }
+        })
+        .catch(error => {
+          alert('An error occurred during login. Please try again.');
+        });
+    });
+  </script>
+</body>
+</html> -->
