@@ -1,0 +1,61 @@
+*{
+  background: blueviolet;
+}
+
+.logo img{
+  line-height: 60px;
+  margin-left: 40px;
+  display: inline-block;
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav li {
+  color: bisque;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.nav li a {
+  text-decoration: solid;
+  color: bisque;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.5 ease;
+}
+
+.nav li a:hover {
+  background-color: rgb(0, 94, 255);
+  color: bisque;
+}
+
+.ul li.active a {
+  background-color: white;
+  color: #000;
+}
+
+#music-player {
+    width: 300px;
+    margin: 50px auto;
+}
+  
+#playlist {
+    list-style: none;
+    padding: 0;
+  }
+  
+#playlist li {
+    cursor: pointer;
+    padding: 10px;
+}
+  
+#playlist li:hover {
+    background-color: #f5f5f5;
+}
+  

@@ -56,3 +56,8 @@ window.onclick = function (event){
 		modal.style.display = "none";
 	}
 }
+
+let loginBtn = document.getElementById ('login-btn');
+loginBtn.onclick = function () {
+	window.location.href = "/song.html";
+}
