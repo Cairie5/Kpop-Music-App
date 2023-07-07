@@ -1,92 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eng">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KPOP MUSIC APP</title>
+    <title>KPOP-MUSIC</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-
 </head>
-<body>
-    <!--image slider start-->
+<body style="height: 2000px;">
+	<header>
+		<div id="logo"><img src="pictures/optimized_large_thumb_stage-removebg-preview.png" alt="kpop"></span></div>
+		<span class="sign"><a class="act" href="#">LOGIN</a></span>
+		<span class="sign"><a href="#">REGISTER</a></span>
+	</header>
+	
     <div class="slider">
-        <div class="slides">
-            <!--radio button start-->
+		<!-- fade css -->
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Welcome To KPOP</h1>
+				<p>KPOP MUSIC<br>Be sure to find the best of kpop</p>
+			</div>
+			<img src="pictures/BTS.webp" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Welcome To KPOP</h1>
+				<p>KPOP MUSIC<br>Be sure to find the best of kpop</p>
+			</div>
+			<img src="pictures/b-i-kim-hanbin-btbt-kpop-k-pop.webp" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Welcome To KPOP</h1>
+				<p>KPOP MUSIC<br>Be sure to find the best of kpop</p>
+			</div>
+			<img src="pictures/Blackswan2.jpeg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Welcome To KPOP</h1>
+				<p>KPOP MUSIC<br>Be sure to find the best of kpop</p>
+			</div>
+			<img src="pictures/MONSTA_X_.webp" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Welcome To KPOP</h1>
+				<p>KPOP MUSIC<br>Be sure to find the best of kpop</p>
+			</div>
+			<img src="pictures/Straykids.jpg" style="width: 100%; height: 100%;">
+		</div>
+        		<div class="myslide fade">
+			<div class="txt">
+				<h1>Welcome To KPOP</h1>
+				<p>KPOP MUSIC<br>Be sure to find the best of kpop</p>
+			</div>
+			<img src="pictures/TXT2.jpg" style="width: 100%; height: 100%;">
+		</div>
+        		<div class="myslide fade">
+			<div class="txt">
+				<h1>Welcome To KPOP</h1>
+				<p>KPOP MUSIC<br>Be sure to find the best of kpop</p>
+			</div>
+			<img src="pictures/Ateez.jpg" style="width: 100%; height: 100%;">
+		</div>
 
-            <input type="radio" name="radio-btn" id="image1">
-            <input type="radio" name="radio-btn" id="image2">
-            <input type="radio" name="radio-btn" id="image3">
-            <input type="radio" name="radio-btn" id="image4">
-            <input type="radio" name="radio-btn" id="image5">
-            <input type="radio" name="radio-btn" id="image6">
-            <input type="radio" name="radio-btn" id="image7">
-
-            <!--radio button end-->
-
-            <!--slide image start-->
-
-            <div class="slide first">
-                <img src="BTS2.webp" alt="BTS">
-            </div>
-
-            <div class="slide">
-                <img src="b-i-kim-hanbin-btbt-kpop-k-pop.webp" alt="B.I">
-            </div>
-
-            <div class="slide">
-                <img src="StrayKids.webp" alt="STRAYKIDS">
-            </div>
-
-            <div class="slide">
-                <img src="Blackswan2.jpeg" alt="BLACKSWAN">
-            </div>
-
-            <div class="slide">
-                <img src="MONSTA_X_.webp" alt="MONSTA_X_">
-            </div>
-
-            <div class="slide">
-                <img src="Itzy.jpg" alt="ITZY">
-            </div>
-
-            <div class="slide">
-                <img src="TXT2.jpg" alt="TXT">
-            </div>
-
-            <!--slide image end-->
-
-            <!--automatic navigation start-->
-
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-                <div class="auto-btn5"></div>
-                <div class="auto-btn6"></div>
-                <div class="auto-btn7"></div>
-            </div>
-
-            <!--automatic navigation end-->
-
-        </div>
-        <!--manual navigation start-->
-
-        <div class="navigation-manual">
-            <label for="image1" class="manual-btn"></label>
-            <label for="image2" class="manual-btn"></label>
-            <label for="image3" class="manual-btn"></label>
-            <label for="image4" class="manual-btn"></label>
-            <label for="image5" class="manual-btn"></label>
-            <label for="image6" class="manual-btn"></label>
-            <label for="image7" class="manual-btn"></label>
-
-        </div>
-
-        <!--manual navigation end-->
-    </div>
-<!--image slider end here-->
-
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+		<div class="dotsbox" style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+		</div>
+	</div>
+	
+<script src="index.js"></script>
 </body>
 </html>
+
+
