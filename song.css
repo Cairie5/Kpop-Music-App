@@ -65,4 +65,21 @@ header {
 #playlist li:hover {
     background-color: #f5f5f5;
 }
+
+#search-input {
+ color: antiquewhite;
+}
+
+#searchButton {
+  color: yellowgreen;
   
+}
+
+#searchButton:hover {
+  color: #f5f5f5;
+}
+
+#searchResults {
+  color: aqua;
+  text-shadow: #f5f5f5;
+}

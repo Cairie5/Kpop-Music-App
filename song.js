@@ -76,22 +76,71 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function logoutUser() {
-  // Clear any stored session or tokens
-  // For example:
-  // localStorage.removeItem("userToken");
-
-  // Perform any additional logout operations or API calls if needed
-  // For example:
-  // fetch('/logout', { method: 'POST' })
-  //   .then(response => {
-  //     // Handle logout response
-  //   })
-  //   .catch(error => {
-  //     // Handle error
-  //   });
-
-  // Show a logout confirmation message
   console.log("Logged out successfully.");
 }
 
-  
+ // Array of K-pop songs
+const searchData = [
+  'Dynamite',
+  'Boy With Luv',
+  'Kill This Love',
+  'Gangnam Style',
+  'DNA',
+  'Fancy',
+  'Love Scenario',
+  'Fake Love',
+  'Ice Cream',
+  'How You Like That',
+  'TT',
+  'MIC Drop',
+  'Ddu-Du Ddu-Du',
+  'Blood Sweat & Tears',
+  'Whistle',
+  'Btbt',
+  'Fire',
+  'Karma',
+  'Sugar Rush Ride',
+  'Fever',
+  'Who Do You Love',
+];
+
+// Get references to the HTML elements
+const searchInput = document.getElementById('searchInput');
+const searchButton = document.getElementById('searchButton');
+const searchResults = document.getElementById('searchResults');
+
+// Add a click event listener to the search button
+searchButton.addEventListener('click', () => {
+  // Get the search query entered by the user
+  const query = searchInput.value.toLowerCase();
+
+  // Filter the K-pop songs based on the query
+  const filteredResults = searchData.filter(song =>
+    song.toLowerCase().includes(query)
+  );
+
+  // Display the filtered results
+  displayResults(filteredResults);
+});
+
+// Function to display the search results
+function displayResults(results) {
+  // Clear previous results
+  searchResults.innerHTML = '';
+
+  // Check if there are no results
+  if (results.length === 0) {
+    const noResultsMessage = document.createElement('p');
+    noResultsMessage.textContent = 'No results found.';
+    searchResults.appendChild(noResultsMessage);
+    return;
+  }
+
+  // Iterate over the filtered results and display them
+  results.forEach(result => {
+    const resultItem = document.createElement('div');
+    resultItem.textContent = result;
+    searchResults.appendChild(resultItem);
+  });
+}
+ 
