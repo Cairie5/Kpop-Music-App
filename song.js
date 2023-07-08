@@ -63,5 +63,35 @@ document.addEventListener("DOMContentLoaded", function() {
   
       playlist.appendChild(listItem);
     });
-  }); 
+  });
+  
+  document.getElementById("logoutButton").addEventListener("click", function(event) {
+  event.preventDefault(); // Prevent default link behavior
+
+  // Perform logout actions
+  logoutUser();
+
+  // Redirect the user to the login page
+  window.location.href = "login.html";
+});
+
+function logoutUser() {
+  // Clear any stored session or tokens
+  // For example:
+  // localStorage.removeItem("userToken");
+
+  // Perform any additional logout operations or API calls if needed
+  // For example:
+  // fetch('/logout', { method: 'POST' })
+  //   .then(response => {
+  //     // Handle logout response
+  //   })
+  //   .catch(error => {
+  //     // Handle error
+  //   });
+
+  // Show a logout confirmation message
+  console.log("Logged out successfully.");
+}
+
   
